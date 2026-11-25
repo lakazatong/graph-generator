@@ -1,0 +1,17 @@
+generator:
+  name: watts_strogatz
+  regime: small_world
+  params:
+    n: 20
+    k: 4
+transforms:
+  - name: orient
+    params:
+      mode: random_edges
+  - name: make_cyclic
+    params:
+      n_cycles: 2
+analysis:
+  roles: true
+  fingerprint: true
+output: ./output/ws-cycle

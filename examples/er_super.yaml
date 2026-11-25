@@ -1,0 +1,13 @@
+generator:
+  name: erdos_renyi
+  regime: supercritical
+  params:
+    n: 25
+transforms:
+  - name: to_dag
+    params:
+      strategy: random_order
+analysis:
+  roles: true
+  fingerprint: true
+output: ./output/er-super

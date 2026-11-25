@@ -1,0 +1,14 @@
+generator:
+  name: barabasi_albert
+  regime: sparse_scale_free
+  params:
+    n: 30
+transforms:
+  - name: orient
+    params:
+      mode: by_label
+  - name: remove_isolated
+analysis:
+  roles: true
+  fingerprint: true
+output: ./output/ba-sparse
